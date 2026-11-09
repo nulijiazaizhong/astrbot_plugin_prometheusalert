@@ -1,0 +1,13 @@
+name: astrbot_plugin_prometheusalert
+display_name: PrometheusAlert 告警转发
+desc: 接收 PrometheusAlert 渲染后的 Webhook 告警，并推送到指定的 AstrBot 会话。
+short_desc: 将 PrometheusAlert 告警推送到 QQ、OneBot v11 和 KOOK。
+version: v1.0.0
+author: nulijiazaizhong
+repo: https://github.com/nulijiazaizhong/astrbot_plugin_prometheusalert
+astrbot_version: ">=4.0.0,<5"
+support_platforms:
+  - qq_official
+  - qq_official_webhook
+  - aiocqhttp
+  - kook

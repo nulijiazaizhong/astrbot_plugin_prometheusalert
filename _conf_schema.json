@@ -1,0 +1,29 @@
+{
+  "host": {
+    "description": "Webhook 监听地址",
+    "type": "string",
+    "default": "0.0.0.0",
+    "hint": "通常保持 0.0.0.0；修改后需重载插件。"
+  },
+  "port": {
+    "description": "Webhook 监听端口",
+    "type": "int",
+    "default": 8089,
+    "hint": "请确保端口未被占用；Docker 部署还需映射此端口。修改后需重载插件。"
+  },
+  "token": {
+    "description": "Webhook 访问令牌",
+    "type": "string",
+    "default": "",
+    "secret": true,
+    "hint": "必填。请设置足够长的随机字符串，令牌会作为 token 查询参数传递。",
+    "obvious_hint": true
+  },
+  "targets": {
+    "description": "告警接收会话",
+    "type": "list",
+    "default": [],
+    "_special": "umo",
+    "hint": "选择一个或多个 QQ 官方机器人、OneBot v11 或 KOOK 会话；支持群聊和私聊。"
+  }
+}
